@@ -3,7 +3,7 @@
 <% if @card.nil? %>
   <p>Esse card não existe!</p>
 <% else %>
-  <p><%= @card.name %></p>
+  <p><%= @card.name %> (<%= link_to 'Editar', edit_card_path(@card) %>)</p>
 <% end %>
 
 <button><%= link_to 'Voltar', root_path %></button>
