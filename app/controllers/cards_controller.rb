@@ -1,6 +1,9 @@
 class CardsController < ApplicationController
 	def index
-		@cards = []
-		@cards << 'Português: Cachorro -> Inglês: Dog'
+		@cards = Card.all
 	end
+
+  def show
+    @card = Card.find(params[:id])
+  end
 end

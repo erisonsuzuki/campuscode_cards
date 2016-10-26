@@ -1,5 +1,5 @@
-Olá, cards!
+<h1>Lita de Cards</h1>
 
 <% @cards.each do |card| %>
-	<p><%= card %></p>
+	<p><%= link_to card, card_path(card.id) %></p>
 <% end %>
