@@ -1,0 +1,7 @@
+<h1>Novo Card</h1>
+
+<%= form_tag cards_path do %>
+  <%= text_field_tag :frente, nil, { placeholder: 'Frente' } %>
+  <%= text_field_tag :verso, nil, { placeholder: 'Verso' } %>
+  <%= submit_tag 'Criar!' %>
+<% end %>

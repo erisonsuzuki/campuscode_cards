@@ -1,5 +1,7 @@
-<h1>Lita de Cards</h1>
+<h1>Lista de Cards</h1>
 
 <% @cards.each do |card| %>
 	<p><%= link_to card, card %></p>
 <% end %>
+
+<button><%= link_to 'Criar card', new_card_path %></button>
