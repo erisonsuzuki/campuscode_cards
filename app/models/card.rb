@@ -1,9 +1,9 @@
 class Card < ApplicationRecord
-  def cardinal
+  def to_s
     "##{id} - #{frente}"
   end
 
-	def to_s
-		"#{frente} -> #{verso}"
-	end
+  def name
+    "##{id} - #{frente} -> #{verso}"
+  end
 end
