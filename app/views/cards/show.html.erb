@@ -1,3 +1,9 @@
-<h1>Card</h1>
+<h1>Detalhe do Card</h1>
 
-<p><%= @card %></p>
+<% if @card.nil? %>
+  <p>Esse card não existe!</p>
+<% else %>
+  <p><%= "##{@card.id} - #{@card}" %></p>
+<% end %>
+
+<button><%= link_to 'Voltar', cards_path %></button>
